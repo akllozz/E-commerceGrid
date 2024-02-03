@@ -8,7 +8,7 @@
 body, html{
     margin: 0;
     font-family: 'Poppins', 'Roboto';
-    background-color: #829ca7   ;
+    background-color: #1F1F29   ;
 }
 
 .grid-container{
@@ -23,7 +23,7 @@ body, html{
 
 header{
     grid-area: header;
-    background-color: #1F1F29;
+    background-color: #121119;
     color: #00A2B5;
     padding: 1rem;
     font-family: 'Protest Revolution', 'Poppins';
@@ -45,31 +45,96 @@ nav{
 }
 
 h4{
-    margin: 1rem;
+    padding: 1.5rem 2rem .5rem 2rem;
     font-size: 1.25rem;
+    color: #E8C4EC;
 }
 
 nav ul li{
     list-style: none;
     font-size: .875rem;
+    color: #3bb5ca;
+}
+
+nav ul li:hover{
+    color: #DA9DE7;
+    cursor: pointer;
 }
 
 .stock{
-    color: #484848;
+    color: #69757c;
 }
+
 
 main{
     grid-area: main;
+    padding-bottom: 3rem;
+}
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
+    text-align: center;
+    background-color: #121119;
+    color: #3bb5ca;
+    align-self: normal;
+    border-radius: .625rem;
+}
+
+.card .btn{
+    background-color: #3bb5ca;
+    margin-top: auto;
+    border-radius: .625rem;
+}
+
+.card img{
+    height: auto;
+    border-radius: .625rem;
+}
+
+.card img:hover {
+    transform:scale(1.1);
+    z-index: 1;
+  }
+
+.btn:hover{
+    background-color: #DA9DE7;
+    color: #191822;
+}
+
+.card h3{
+    margin: 0;
+    padding-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3bb5ca;
+}
+
+.card p{
+    margin: 0;
+    padding: .5rem .5rem 1.5rem .5rem;
+    font-weight: 200;
+    color: #DA9DE7;
 }
 
 footer{
     grid-area: footer;
-    background-color: #1F1F29;
+    background-color: #121119;
     color: #00A2B5;
     text-align: center;
     padding: 1.5rem;
+}
 
+footer p{
+    margin: 0;
 }
 
 
