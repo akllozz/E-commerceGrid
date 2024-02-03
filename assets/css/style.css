@@ -8,9 +8,18 @@
 body, html{
     margin: 0;
     font-family: 'Open Sans', 'Roboto';
-    background-color: #d9eaf2   ;
+    background-color: #829ca7   ;
 }
 
+.grid-container{
+    font-family: 'Open Sans';
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "nav main"
+    "footer footer";
+    grid-template-columns: 1fr 85%;
+}
 
 header{
     grid-area: header;
@@ -20,16 +29,33 @@ header{
     font-family: 'Protest Revolution', 'Open Sans';
     font-size: 2.5rem;
     letter-spacing: .0625rem;
+    text-align: center;
 }
 
 header p{
     margin: 0;
-    margin-left: 1rem;
+    
 }
 
 nav{
     grid-area: nav;
-    background-color: #6c95a8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: .875rem;
+}
+
+.stock{
+    color: #484848;
 }
 
 main{
@@ -43,15 +69,7 @@ footer{
     color: #00A2B5;
     text-align: center;
     padding: 1.5rem;
+
 }
 
-.grid-container{
-    font-family: 'Open Sans';
-    display: grid;
-    grid-template-areas:
-    "header header"
-    "nav main"
-    "footer footer";
 
-    grid-template-columns: 1fr 85%;
-}
